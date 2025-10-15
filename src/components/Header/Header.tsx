@@ -4,7 +4,7 @@ import facebookImg from '@/assets/icon/sns/facebook.png';
 import twitterImg from '@/assets/icon/sns/twitter.png';
 import instagramImg from '@/assets/icon/sns/instagram.png';
 import youtubeImg from '@/assets/icon/sns/youtube.png';
-import searchImg from '@/assets/icon/sns/linkedin.png';
+import linkedinImg from '@/assets/icon/sns/linkedin.png';
 import menuImg from '@/assets/icon/menu.png';
 
 export default function Header() {
@@ -19,13 +19,15 @@ export default function Header() {
           <div>픽사 소개</div>
         </S.TabMenu>
         <S.SNSMenu>
-        <img src={facebookImg} />
-        <img src={twitterImg} />
-        <img src={instagramImg} />
-        <img src={youtubeImg} />
-        <img src={searchImg} />
+          <a href="https://www.facebook.com/Pixar/"><img src={facebookImg} /></a>
+          <a href="https://x.com/pixar"><img src={twitterImg} /></a>
+          <a href="https://www.instagram.com/pixar/"><img src={instagramImg} /></a>
+          <a href="https://www.youtube.com/pixar"><img src={youtubeImg} /></a>
+          <a href="https://www.linkedin.com/company/pixar-animation-studios"><img src={linkedinImg} /></a>
+
         </S.SNSMenu>
         <S.Menu><img src={menuImg} /></S.Menu>
     </S.HeaderWrapper>
   )
 }
+ 

@@ -44,12 +44,19 @@ export const TabMenu = styled.div`
   flex-direction: row;
   gap: 96px;
   font-size: 18px;
+  cursor: pointer;
+
+  div:hover{
+    font-weight: 700;
+  }
 
   @media (max-width: 1024px) {
     display: flex;
     font-size: 14px;
     gap: 32px;
+    cursor: pointer;
   }
+
    @media (max-width: 768px) {
     display: none;
   }
