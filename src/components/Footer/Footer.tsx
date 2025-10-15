@@ -9,13 +9,17 @@ export default function Footer() {
         <F.TextContainer>
             <div>Do Not Sell or Share My Personal Information</div>
             <F.Links>
-                <div>Privacy Policy</div>
+                <a href='https://privacy.thewaltdisneycompany.com/en/' target='_blank' rel="noopener noreferrer"
+                    >Privacy Policy</a>
                 <div>|</div>
-                <div>Your US State Privacy Rights</div>
+                <a href='https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/your-us-state-privacy-rights/' target='_blank' rel="noopener noreferrer"
+                    >Your US State Privacy Rights</a>
                 <div>|</div>
-                <div>Children's Online Privacy Policy</div>
+                <a href='https://privacy.thewaltdisneycompany.com/en/for-parents/childrens-online-privacy-policy/' target='_blank' rel="noopener noreferrer"
+                    >Children's Online Privacy Policy</a>
                 <div>|</div>
-                <div>Interest Based Ads</div>
+                <a href='https://privacy.thewaltdisneycompany.com/en/privacy-controls/online-tracking-and-advertising/' target='_blank' rel="noopener noreferrer"
+                    >Interest Based Ads</a>
             </F.Links>
             <div>© 1986-2025 Disney-Pixar</div>
         </F.TextContainer>
