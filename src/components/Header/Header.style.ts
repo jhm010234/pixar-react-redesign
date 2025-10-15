@@ -62,10 +62,10 @@ export const SNSMenu = styled.div`
 
   @media (max-width: 1024px) {
     display: flex;
-    gap: 20px;
+    gap: 16px;
 
       img {
-      width: 18px;
+      width: 16px;
     }
   }
 
