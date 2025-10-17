@@ -16,7 +16,7 @@ export const FooterWrapper = styled.div`
     @media (max-width: 768px) {
         display: flex;
         gap: 16px;
-        padding: 32px 0;
+        padding: 32px 16px;
     }
 `;  
 
