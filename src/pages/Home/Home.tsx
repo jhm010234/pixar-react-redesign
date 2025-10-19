@@ -2,6 +2,7 @@ import Header from '@/components/Header/Header'
 import HeroMovieBanner from '@/pages/Home/components/HeroMovieBanner/index'
 import MasterPiece from '@/pages/Home/components/MasterPiece/index'
 import MovieCategory from '@/pages/Home/components/MovieCategory/index'
+import Value from '@/pages/Home/components/Value/index'
 import Footer from '@/components/Footer/Footer'
 
 
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroMovieBanner />
       <MasterPiece />
       <MovieCategory />
+      <Value />
       <Footer />
     </>
 
