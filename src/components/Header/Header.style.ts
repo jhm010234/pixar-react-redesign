@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderWrapper = styled.div`
   display: flex;
-  padding: 32px 200px;
+  padding: 32px 100px;
   align-items: center;
   justify-content: space-between;
 
@@ -11,16 +11,13 @@ export const HeaderWrapper = styled.div`
     padding: 28px;
     align-items: center;
     justify-content: space-between;
-
-
   }
 
   @media (max-width: 768px) {
     display: flex;
     padding: 24px;
     justify-content: space-between;
-   align-items: center;
-
+    align-items: center;
   }
 
 `;
@@ -42,8 +39,8 @@ export const LogoImg = styled.img`
 export const TabMenu = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 96px;
-  font-size: 18px;
+  gap: 72px;
+  font-size: 16px;
   cursor: pointer;
 
   div:hover{

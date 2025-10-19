@@ -7,6 +7,17 @@ export const TitleWrapper = styled.div`
     color: ${colors.yellow};
     font-size: 48px;
     justify-content: center;
+
+    @media (max-width: 1024px) {
+        display: flex;
+        font-size: 32px;
+    }
+
+    @media (max-width: 768px) {
+        display: flex;
+        font-size: 24px;
+        gap: 0.5rem;
+    }
 `;
 
 export const LightText = styled.div`
