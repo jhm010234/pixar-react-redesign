@@ -12,7 +12,7 @@ export default function Header() {
     <S.HeaderWrapper>
         <S.LogoImg src={logoImg} />
         <S.TabMenu>
-          <div>영화</div>
+          <div>작품</div>
           <div>이벤트</div>
           <div>기술 연구</div>
           <div>픽사에서 일하기</div>

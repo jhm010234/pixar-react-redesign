@@ -115,7 +115,6 @@ export const Name = styled.div`
     position: absolute;
     color: ${colors.white};
     font-size: 18px;
-    font-family: 'S-CoreDream-6Bold', sans-serif;
     width: 100%;
     height: 100%;
     justify-content: center;

@@ -52,7 +52,7 @@ export const Description = styled.div`
     text-align: center;
     font-size: 14px;
     line-height: 28px;
-    font-family: 'S-CoreDream-5Medium', sans-serif;
+    font-weight: ${({theme})=> theme.font.weight.medium};
     width: 600px;
 
     @media (max-width: 1024px) {
@@ -134,7 +134,7 @@ export const Icon = styled.div`
 
 export const IconTitle = styled.div`
     display: flex;
-    font-family: 'S-CoreDream-6Bold', sans-serif;
+    font-weight: ${({theme})=> theme.font.weight.bold};
     font-size: 18px;
 
     @media (max-width: 1024px) {
@@ -149,7 +149,6 @@ export const IconTitle = styled.div`
 `;
 
 export const IconDescription = styled.div`
-    font-family: 'S-CoreDream-4Regular', sans-serif;
     font-size: 14px;
 
     @media (max-width: 1024px) {
