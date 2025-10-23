@@ -6,13 +6,14 @@ import instagramImg from '@/assets/icon/sns/instagram.png';
 import youtubeImg from '@/assets/icon/sns/youtube.png';
 import linkedinImg from '@/assets/icon/sns/linkedin.png';
 import menuImg from '@/assets/icon/menu.png';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
     <S.HeaderWrapper>
         <S.LogoImg src={logoImg} />
         <S.TabMenu>
-          <div>작품</div>
+          <div><Link to='/films'>작품</Link></div>
           <div>이벤트</div>
           <div>기술 연구</div>
           <div>픽사에서 일하기</div>
