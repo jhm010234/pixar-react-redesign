@@ -40,7 +40,7 @@ export const TabMenu = styled.div`
   display: flex;
   flex-direction: row;
   gap: 72px;
-  font-size: 16px;
+  font-size: 14px;
   cursor: pointer;
 
   div:hover{
@@ -63,6 +63,7 @@ export const SNSMenu = styled.div`
   display: flex;
   flex-direction: row;
   gap: 32px;
+  align-items: center;
 
   @media (max-width: 1024px) {
     display: flex;
