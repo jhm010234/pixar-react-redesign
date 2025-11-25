@@ -11,7 +11,8 @@ import { Link } from 'react-router-dom';
 export default function Header() {
   return (
     <S.HeaderWrapper>
-        <S.LogoImg src={logoImg} />
+      <Link to='/'><S.LogoImg src={logoImg} /></Link>
+        
         <S.TabMenu>
           <div><Link to='/films'>작품</Link></div>
           <div>이벤트</div>
