@@ -9,6 +9,9 @@ import menuImg from '@/assets/icon/menu.png';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
+  const openMenu = () => {};
+    
+
   return (
     <S.HeaderWrapper>
       <Link to='/'><S.LogoImg src={logoImg} /></Link>
@@ -28,7 +31,7 @@ export default function Header() {
           <a href="https://www.linkedin.com/company/pixar-animation-studios"><img src={linkedinImg} /></a>
 
         </S.SNSMenu>
-        <S.Menu><img src={menuImg} /></S.Menu>
+        <S.Menu onClick={openMenu}><img src={menuImg} /></S.Menu>
     </S.HeaderWrapper>
   )
 }
