@@ -5,13 +5,17 @@ import { useEffect, useState } from 'react';
 
 export default function MovieDetail91() {
     const [scale, setScale] = useState(1.1);
+    const [scale2, setScale2] = useState(0.9);
 
     useEffect(()=>{
         const handleScroll = () => {
-            if (window.scrollY > 30) {
-                setScale(1.0);    // 스크롤하면 원본 크기로 축소
+            if (window.scrollY > 15) {
+                setScale(1.0);  
+                setScale2(0.9);  // 스크롤하면 원본 크기로 축소
             } else {
                 setScale(1.15);    // 맨 위면 다시 확대
+                setScale2(0.95);  // 스크롤하면 원본 크기로 축소
+
             }
         };
 
@@ -24,7 +28,7 @@ export default function MovieDetail91() {
     <>
     <div>
       <S.BackgroundImg scale={scale}><img src={BannerImg} /></S.BackgroundImg>
-      <S.Logo><img src={LogoImg} /></S.Logo>
+      <S.Logo scale={scale2}><img src={LogoImg} /></S.Logo>
     </div>
     </>
 

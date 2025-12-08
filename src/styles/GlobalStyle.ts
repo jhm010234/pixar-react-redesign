@@ -1,7 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
+import PuradakFont from "@/assets/fonts/Puradak Gentle Gothic OTF.otf";
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream.css');
+
+  @font-face {
+    font-family: "PuradakGentleGothic";
+    src: url(${PuradakFont}) format("opentype");
+  }
 
   *,
   *::before,
