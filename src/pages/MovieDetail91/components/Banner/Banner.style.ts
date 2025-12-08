@@ -26,7 +26,7 @@ export const BackgroundImg = styled.div<BackgroundProps>`
 
 export const Logo = styled.div<LogoProps>`
     position: absolute;
-    top: 90%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%); 
 
