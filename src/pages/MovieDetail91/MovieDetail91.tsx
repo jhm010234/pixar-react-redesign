@@ -1,7 +1,7 @@
 import Header from "@/components/Header/Header"
 import Banner from "./components/Banner"
-import Series from "./components/Series"
 import Introduction from "./components/Introduction"
+import Trailers from "./components/Trailers"
 
 
 export default function MovieDetail91() {
@@ -9,8 +9,8 @@ export default function MovieDetail91() {
     <>
     <Header />
     <Banner />
-    <Series />
     <Introduction />
+    <Trailers />
     </>
 
   )
