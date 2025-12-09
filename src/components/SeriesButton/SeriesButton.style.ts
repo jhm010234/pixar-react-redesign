@@ -1,11 +1,16 @@
 import colors from "@/styles/colors";
 import styled from "styled-components";
 
-export const ButtonWrapper = styled.div`
+interface ButtonWrapperProps {
+    showBorder?: boolean;
+}
+
+export const ButtonWrapper = styled.div<ButtonWrapperProps>`
     border-radius: 100%;
     width: 8rem;
     height: 8rem;
     position: relative;
+    border : ${(props) => (props.showBorder ? "5px solid #8522FF" : "none")};
 
 
     img{
@@ -37,4 +42,5 @@ export const Text = styled.div`
     transform: translate(-50%, -50%); 
     color: ${colors.white};
     text-align: center;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
 `;
