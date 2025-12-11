@@ -2,6 +2,7 @@ import Header from "@/components/Header/Header"
 import Banner from "./components/Banner"
 import Introduction from "./components/Introduction"
 import Trailers from "./components/Trailers"
+import Characters from "./components/Characters"
 
 
 export default function MovieDetail91() {
@@ -11,6 +12,7 @@ export default function MovieDetail91() {
     <Banner />
     <Introduction />
     <Trailers />
+    <Characters />
     </>
 
   )
