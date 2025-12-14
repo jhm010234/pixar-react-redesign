@@ -1,7 +1,36 @@
-import React from 'react'
+import * as S from "./CharactersSlideBar.style"
 
-export default function index() {
+interface Character {
+  id: number;
+  name: string;
+  closedImage: string;
+  openedImage: string;
+  description: string;
+}
+
+interface CharacterSliderProps {
+  characters: Character[];
+}
+
+export default function index({characters}:CharacterSliderProps) {
   return (
-    <div>index</div>
+    <>
+      <S.SliderWrapper>
+        <S.SliderTrack>
+          {
+            characters.map(ch => {
+              return(
+                <S.CharacterItem key={ch.id}>
+                  <img src={ch.closedImage}></img>
+                </S.CharacterItem> 
+              )
+
+            })
+          }
+        </S.SliderTrack>
+
+      </S.SliderWrapper>
+    </>
+
   )
 }

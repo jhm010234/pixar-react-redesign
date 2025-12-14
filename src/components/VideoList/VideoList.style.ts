@@ -62,12 +62,12 @@ export const SubVideo = styled.div`
 export const SubItem = styled.div`
     display: flex;
     flex-direction: column;
-    width: 10rem;
-    height: 5.957rem;
     gap: 0.5rem;
 
     img{
         object-fit: cover;
+        width: 10rem;
+        height: 5.957rem;
     }
 
     span{

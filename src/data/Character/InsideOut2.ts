@@ -1,12 +1,29 @@
-
+import joyOpenedImg from "@/assets/image/InsideOut2/Characters/joy_opened.png"
+import joyClosedImg from "@/assets/image/InsideOut2/Characters/joy_closed.png"
+import angerOpenedImg from "@/assets/image/InsideOut2/Characters/anger_opened.png"
+import angerClosedImg from "@/assets/image/InsideOut2/Characters/anger_closed.png"
+import sadnessOpenedImg from "@/assets/image/InsideOut2/Characters/sadness_opened.png"
+import sadnessClosedImg from "@/assets/image/InsideOut2/Characters/sadness_closed.png"
+import anxiestOpenedImg from "@/assets/image/InsideOut2/Characters/anxiest_opened.png"
+import anxiestClosedImg from "@/assets/image/InsideOut2/Characters/anxiest_closed.png"
+import disgustOpenedImg from "@/assets/image/InsideOut2/Characters/disgust_opened.png"
+import disgustClosedImg from "@/assets/image/InsideOut2/Characters/disgust_closed.png"
+import fearOpenedImg from "@/assets/image/InsideOut2/Characters/fear_opened.png"
+import fearClosedImg from "@/assets/image/InsideOut2/Characters/fear_closed.png"
+import ennuiOpenedImg from "@/assets/image/InsideOut2/Characters/ennui_opened.png"
+import ennuiClosedImg from "@/assets/image/InsideOut2/Characters/ennui_closed.png"
+import embarrassmentOpenedImg from "@/assets/image/InsideOut2/Characters/embarrassment_opened.png"
+import embarrassmentClosedImg from "@/assets/image/InsideOut2/Characters/embarrassment_closed.png"
+import envyOpenedImg from "@/assets/image/InsideOut2/Characters/envy_opened.png"
+import envyClosedImg from "@/assets/image/InsideOut2/Characters/envy_closed.png"
 
 
 export const insideOut2Characters = [
   {
     id: 1,
     name: "기쁨",
-    shortImage: ,
-    longImage: ,
+    closedImage: joyClosedImg,
+    openedImage: joyOpenedImg,
     description: `기쁨은 다시 돌아와 십대가 된 라일리를 맞이할 준비가 되어 있습니다.
         라일리의 새로운 십대 세계에는 기쁨의 순간, 눈물 어린 슬픔, 불타는 좌절, 어지러운 변화,
         그리고 난감할 만큼 어색한 순간들이 가득합니다.
@@ -19,8 +36,8 @@ export const insideOut2Characters = [
   {
     id: 2,
     name: "불안",
-    shortImage: ,
-    longImage: ,
+    closedImage: anxiestClosedImg,
+    openedImage: anxiestOpenedImg,
     description: `
        끊임없이 긴장된 에너지를 가진 불안은 라일리가 일어날 수 있는 모든 부정적인 상황에 대비하도록 열정적으로 챙긴다.
         눈에 보이지 않는 위험으로부터 새내기 십대인 라일리를 지켜주기 위해,
@@ -33,8 +50,8 @@ export const insideOut2Characters = [
   {
     id: 3,
     name: "버럭",
-    shortImage: ,
-    longImage: ,
+    closedImage: angerClosedImg,
+    openedImage: angerOpenedImg,
     description: `
         성질이 급하고 고집 센 버럭은 라일리를 위해서라면 옳다고 믿는 일을 위해 언제든 맞설 준비가 되어 있다.
         그는 열정적이지만 가끔은 과하게 반응하고 폭발적인 모습을 보이기도 한다. 
@@ -44,29 +61,40 @@ export const insideOut2Characters = [
   {
     id: 4,
     name: "슬픔",
-    shortImage: ,
-    longImage: ,
-    description: "",
+    closedImage: sadnessClosedImg,
+    openedImage: sadnessOpenedImg,
+    description: `새로운 감정들이 등장하기 전까지, 슬픔은 이제 막 자신의 역할에 익숙해지려는 참이었다.
+      모두가 라일리의 삶에서 그녀가 얼마나 중요한 존재인지 알기에,
+      요즘 슬픔은 자신의 우울한 자리에서도 조금은 편안함을 느낀다.
+      발걸음이 가볍지는 않더라도, 라일리가 다가올 변화를 이겨내도록 돕는 일이라면 언제든 최선을 다한다.
+      그것이 중요한 임무를 맡게 되는 일이라 해도 마다하지 않는다.`,
   },
   {
     id: 5,
     name: "소심",
-    shortImage: ,
-    longImage: ,
-    description: "",
+    closedImage: fearClosedImg,
+    openedImage: fearOpenedImg,
+    description: `소심은 라일리를 지켜내며, 크고 작은 눈에 보이는 위험으로부터 안전하게 보호한다.
+      튀어나오는 하키 퍽에서부터 종이에 베이는 작은 상처까지,
+      소심은 걸어 다니는 경고 표지판처럼 위험한 상황과 임박한 위기, 심각한 위협에서 그녀를 성실히 이끌어낸다.
+      조금 과보호적이면 어떤가? 누군가는 안전 수칙을 철저히 지켜야 하니까!`,
   },
     {
     id: 6,
     name: "까칠",
-    shortImage: ,
-    longImage: ,
-    description: "",
+    closedImage: disgustClosedImg,
+    openedImage: disgustOpenedImg,
+    description: `라일리가 이제 십대가 되면서,
+      까칠의 ‘민망하고 별로인 것’을 감지하는 레이더는 그 어느 때보다 예리해졌다.
+      자기주장이 강하고, 가차 없이 솔직하며, 라일리를 불쾌한 모든 것에서 지켜내는 데 전념한다.
+      이상한 음식 냄새나 오글거리는 말투가 감지되면 바로 코웃음을 치고,
+      사회적 망신으로 이어질 수 있는 일이라면 절대 참여하지 않는다.`,
   },
     {
     id: 7,
     name: "따분",
-    shortImage: ,
-    longImage: ,
+    closedImage: ennuiClosedImg,
+    openedImage: ennuiOpenedImg,
     description: `따분은 라일리의 새로운 감정 중 하나로, 그다지 신경 쓰지 않는 듯한 태도를 보인다.
         지루하고 무기력한 표정에 익숙한 눈굴림을 더해,
         필요할 때 라일리의 성격에 적당한 십대 특유의 무심함을 불어넣는다.
@@ -77,8 +105,8 @@ export const insideOut2Characters = [
     {
     id: 8,
     name: "부럽",
-    shortImage: ,
-    longImage: ,
+    closedImage: envyClosedImg,
+    openedImage: envyOpenedImg,
     description: `부럽은 작지만 자신이 원하는 게 무엇인지는 분명히 알고 있다.
         남들이 가진 모든 것을 늘 부러워하며, 그것을 갈망하는 마음을 숨기지 않는다.
         새로운 것, 멋진 것에 대한 끝없는 동경은 그녀의 시선을 사방으로 끌어당기고,
@@ -88,39 +116,39 @@ export const insideOut2Characters = [
     {
     id: 9,
     name: "당황",
-    shortImage: ,
-    longImage: ,
+    closedImage: embarrassmentClosedImg,
+    openedImage: embarrassmentOpenedImg,
     description: `당황은 눈에 띄지 않으려 하지만, 얼굴이 환하게 붉어진 큰 체구 탓에 쉽지 않다.
         수줍음 많고 말수가 적은 그는,
         사회적 어색함이 감지되면 본부 콘솔 위에 그대로 드러눕듯 몸을 던질 준비가 되어 있다.
 `,
   },
-    {
-    id: 10,
-    name: "라일리 앤더슨",
-    shortImage: ,
-    longImage: ,
-    description: `라일리 앤더슨은 이제 공식적으로 십대가 되었다!
-        곧 고등학교에 입학하게 되면서 라일리의 세상은 안팎으로 크게 달라지려 한다.
-        기쁨과 다른 감정들이 유아기를 힘들다고 생각했다면 이제 진짜 험난한 여정이 기다리고 있는 셈이다.
-        새로운 친구들, 각종 시험과 도전,
-        그리고 사춘기까지 게다가 한층 복잡해진 새로운 감정들까지 겹쳐지니 무슨 일이든 일어날 수 있다.
-        라일리의 마음속 깊은 곳에는 여전히 가족과 친구들이 사랑하는 그 밝고 행복한 아이가 자리 잡고 있지만,
-        빠르게 변해가는 자아 속에서 그녀는 새로운 세상의 도전을 어떻게 균형 잡아 나갈지 고군분투하고 있다.
-`,
-  },
-    {
-    id: 11,
-    name: "밸",
-    shortImage: ,
-    longImage: ,
-    description: `밸은 라일리와 그녀의 친구들까지도 동경하는 그런 인물이다.
-        교내 아이스하키 대표팀의 주장으로서 자신감 넘치면서도 누구에게나 친절하고,
-        머리에 시그니처처럼 들어간 빨간색 포인트까지 완벽하게 소화해낸다.
-        모두가 발렌티나에게 감탄하거나 빠져들 수밖에 없다.
-        게다가 그녀는 라일리 안에서 대표팀 선수로서의 가능성을 발견했고,
-        그 사실에 라일리는 완전히 들떠 있으면서도 
+//     {
+//     id: 10,
+//     name: "라일리 앤더슨",
+//     closedImage: ,
+//     openedImage: ,
+//     description: `라일리 앤더슨은 이제 공식적으로 십대가 되었다!
+//         곧 고등학교에 입학하게 되면서 라일리의 세상은 안팎으로 크게 달라지려 한다.
+//         기쁨과 다른 감정들이 유아기를 힘들다고 생각했다면 이제 진짜 험난한 여정이 기다리고 있는 셈이다.
+//         새로운 친구들, 각종 시험과 도전,
+//         그리고 사춘기까지 게다가 한층 복잡해진 새로운 감정들까지 겹쳐지니 무슨 일이든 일어날 수 있다.
+//         라일리의 마음속 깊은 곳에는 여전히 가족과 친구들이 사랑하는 그 밝고 행복한 아이가 자리 잡고 있지만,
+//         빠르게 변해가는 자아 속에서 그녀는 새로운 세상의 도전을 어떻게 균형 잡아 나갈지 고군분투하고 있다.
+// `,
+//   },
+//     {
+//     id: 11,
+//     name: "밸",
+//     closedImage: ,
+//     openedImage: ,
+//     description: `밸은 라일리와 그녀의 친구들까지도 동경하는 그런 인물이다.
+//         교내 아이스하키 대표팀의 주장으로서 자신감 넘치면서도 누구에게나 친절하고,
+//         머리에 시그니처처럼 들어간 빨간색 포인트까지 완벽하게 소화해낸다.
+//         모두가 발렌티나에게 감탄하거나 빠져들 수밖에 없다.
+//         게다가 그녀는 라일리 안에서 대표팀 선수로서의 가능성을 발견했고,
+//         그 사실에 라일리는 완전히 들떠 있으면서도 
     
-    `,
-  },
+//     `,
+//   },
 ];

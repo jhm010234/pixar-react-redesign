@@ -1,5 +1,5 @@
-import trailerThumb1 from "@/assets/image/InsideOut2/InsideOutTrailer1.webp";
-import trailerThumb2 from "@/assets/image/InsideOut2/InsideOutTrailer2.webp";
+import trailerThumb1 from "@/assets/image/InsideOut2/Trailers/InsideOutTrailer1.webp";
+import trailerThumb2 from "@/assets/image/InsideOut2/Trailers/InsideOutTrailer2.webp";
 
 
 export const insideOut2Trailers = [
