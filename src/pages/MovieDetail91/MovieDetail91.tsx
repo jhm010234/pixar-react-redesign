@@ -3,6 +3,7 @@ import Banner from "./components/Banner"
 import Introduction from "./components/Introduction"
 import Trailers from "./components/Trailers"
 import Characters from "./components/Characters"
+import Footer from "@/components/Footer/Footer"
 
 
 export default function MovieDetail91() {
@@ -13,6 +14,7 @@ export default function MovieDetail91() {
     <Introduction />
     <Trailers />
     <Characters />
+    <Footer />
     </>
 
   )

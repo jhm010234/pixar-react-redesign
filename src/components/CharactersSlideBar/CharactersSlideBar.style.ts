@@ -1,4 +1,9 @@
+import colors from "@/styles/colors";
 import styled from "styled-components";
+
+interface ItemProps {
+  isOpen: boolean;
+}
 
 export const SliderWrapper = styled.div`
     width: 100%;
@@ -23,17 +28,30 @@ export const SliderTrack = styled.div`
 
 `;
 
-export const CharacterItem = styled.div`
-    display: flex;
-    width: 10rem;
+export const CharacterItem = styled.div<ItemProps>`
+    width: ${props => (props.isOpen ? "50rem" : "10rem")};
     height: 28.4rem;
     flex-shrink: 0;
+    transition: all 0.3s ease;
+    position: relative;
+    display: block;
+
 
     img{
-        width: 10rem;
+        width: 100%;
         height: 28.4rem;
         object-fit: cover;
+        transition: all 0.3s ease;
     }
+
+    .desc {
+    display: ${props => (props.isOpen ? "block" : "none")};
+    width: 48rem;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    margin-bottom: 5rem;
+  }
 
     /* @media (max-width: 1600px) {
         display: flex;
@@ -52,4 +70,28 @@ export const CharacterItem = styled.div`
     @media (max-width: 768px) {
 
     } */
+`;
+
+
+export const TextWrapper = styled.div`
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+`;
+
+
+export const NameText = styled.div`
+    display: flex;
+    font-size: 3.125rem;
+    font-family: "PuradakGentleGothic";
+    color: ${colors.white};
+    margin: 0 3.5rem;
+`;
+
+export const DescriptionText = styled.div`
+    display: flex;
+    font-size: 1rem;
+    color: ${colors.white};
+    margin: 0 3.5rem;
+
 `;
