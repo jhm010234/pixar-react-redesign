@@ -4,6 +4,7 @@ import React from 'react'
 import Banner from './components/Banner'
 import Introduction from './components/Introduction'
 import Trailers from './components/Trailers'
+import Characters from './components/Characters'
 
 export default function MovieDetail44() {
   return (
@@ -12,6 +13,7 @@ export default function MovieDetail44() {
         <Banner />
         <Introduction />
         <Trailers />
+        <Characters />
         <Footer />
     </>
   )

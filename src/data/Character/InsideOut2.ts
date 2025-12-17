@@ -16,6 +16,10 @@ import embarrassmentOpenedImg from "@/assets/image/InsideOut2/Characters/embarra
 import embarrassmentClosedImg from "@/assets/image/InsideOut2/Characters/embarrassment_closed.png"
 import envyOpenedImg from "@/assets/image/InsideOut2/Characters/envy_opened.png"
 import envyClosedImg from "@/assets/image/InsideOut2/Characters/envy_closed.png"
+import rileyOpenedImg from "@/assets/image/InsideOut2/Characters/riley_opened.png"
+import rileyClosedImg from "@/assets/image/InsideOut2/Characters/riley_closed.png"
+import valentinaOpenedImg from "@/assets/image/InsideOut2/Characters/valentina_opened.png"
+import valentinaClosedImg from "@/assets/image/InsideOut2/Characters/valentina_closed.png"
 
 
 export const insideOut2Characters = [
@@ -123,32 +127,32 @@ export const insideOut2Characters = [
         사회적 어색함이 감지되면 본부 콘솔 위에 그대로 드러눕듯 몸을 던질 준비가 되어 있다.
 `,
   },
-//     {
-//     id: 10,
-//     name: "라일리 앤더슨",
-//     closedImage: ,
-//     openedImage: ,
-//     description: `라일리 앤더슨은 이제 공식적으로 십대가 되었다!
-//         곧 고등학교에 입학하게 되면서 라일리의 세상은 안팎으로 크게 달라지려 한다.
-//         기쁨과 다른 감정들이 유아기를 힘들다고 생각했다면 이제 진짜 험난한 여정이 기다리고 있는 셈이다.
-//         새로운 친구들, 각종 시험과 도전,
-//         그리고 사춘기까지 게다가 한층 복잡해진 새로운 감정들까지 겹쳐지니 무슨 일이든 일어날 수 있다.
-//         라일리의 마음속 깊은 곳에는 여전히 가족과 친구들이 사랑하는 그 밝고 행복한 아이가 자리 잡고 있지만,
-//         빠르게 변해가는 자아 속에서 그녀는 새로운 세상의 도전을 어떻게 균형 잡아 나갈지 고군분투하고 있다.
-// `,
-//   },
-//     {
-//     id: 11,
-//     name: "밸",
-//     closedImage: ,
-//     openedImage: ,
-//     description: `밸은 라일리와 그녀의 친구들까지도 동경하는 그런 인물이다.
-//         교내 아이스하키 대표팀의 주장으로서 자신감 넘치면서도 누구에게나 친절하고,
-//         머리에 시그니처처럼 들어간 빨간색 포인트까지 완벽하게 소화해낸다.
-//         모두가 발렌티나에게 감탄하거나 빠져들 수밖에 없다.
-//         게다가 그녀는 라일리 안에서 대표팀 선수로서의 가능성을 발견했고,
-//         그 사실에 라일리는 완전히 들떠 있으면서도 
+    {
+    id: 10,
+    name: "라일리 앤더슨",
+    closedImage: rileyClosedImg,
+    openedImage: rileyOpenedImg,
+    description: `라일리 앤더슨은 이제 공식적으로 십대가 되었다!
+        곧 고등학교에 입학하게 되면서 라일리의 세상은 안팎으로 크게 달라지려 한다.
+        기쁨과 다른 감정들이 유아기를 힘들다고 생각했다면 이제 진짜 험난한 여정이 기다리고 있는 셈이다.
+        새로운 친구들, 각종 시험과 도전,
+        그리고 사춘기까지 게다가 한층 복잡해진 새로운 감정들까지 겹쳐지니 무슨 일이든 일어날 수 있다.
+        라일리의 마음속 깊은 곳에는 여전히 가족과 친구들이 사랑하는 그 밝고 행복한 아이가 자리 잡고 있지만,
+        빠르게 변해가는 자아 속에서 그녀는 새로운 세상의 도전을 어떻게 균형 잡아 나갈지 고군분투하고 있다.
+`,
+  },
+    {
+    id: 11,
+    name: "밸",
+    closedImage: valentinaClosedImg,
+    openedImage: valentinaOpenedImg,
+    description: `밸은 라일리와 그녀의 친구들까지도 동경하는 그런 인물이다.
+        교내 아이스하키 대표팀의 주장으로서 자신감 넘치면서도 누구에게나 친절하고,
+        머리에 시그니처처럼 들어간 빨간색 포인트까지 완벽하게 소화해낸다.
+        모두가 발렌티나에게 감탄하거나 빠져들 수밖에 없다.
+        게다가 그녀는 라일리 안에서 대표팀 선수로서의 가능성을 발견했고,
+        그 사실에 라일리는 완전히 들떠 있으면서도 
     
-//     `,
-//   },
+    `,
+  },
 ];
