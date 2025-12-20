@@ -13,10 +13,20 @@ export default function index() {
             <S.ItemWrapper>
                 <S.BottomItem>
                     <img src={hoppers} />
-                    <Number number="01" name="호퍼스" />
+                    <S.OpacityLayerBottom />
+                    <S.TextWrapper>
+                        <Number number="01" name="호퍼스" />
+                    </S.TextWrapper>
                 </S.BottomItem>
-                <S.TopItem><img src={toystory5} /><Number number="02"  name="토이스토리5" /></S.TopItem>
-                <S.BottomItem><img src={gatto} /><Number number="03" name="가토" /></S.BottomItem>
+                <S.TopItem>
+                    <img src={toystory5} />
+                    <S.OpacityLayerTop />
+                    <Number number="02"  name="토이스토리5" /></S.TopItem>
+                <S.BottomItem>
+                    <img src={gatto} />
+                    <S.OpacityLayerBottom />
+                    <Number number="03" name="가토" />
+                </S.BottomItem>
             </S.ItemWrapper>
         </S.Wrapper>
     </>

@@ -26,8 +26,9 @@ export const ItemWrapper = styled.div`
 export const BottomItem = styled.div`
     width: 22.5rem;
     height: 36.875rem;
-    border-radius: 0 0 45% 45%;
+    border-radius: 0 0 40% 40%;
     overflow: hidden;
+    position: relative;
 
      img{
          width: 22.5rem;
@@ -44,8 +45,9 @@ export const BottomItem = styled.div`
  export const TopItem = styled.div`
     width: 22.5rem;
     height: 36.875rem;
-    border-radius: 45% 45% 0 0;
+    border-radius: 40% 40% 0 0;
     overflow: hidden;
+    position: relative;
 
 
     img{
@@ -59,3 +61,39 @@ export const BottomItem = styled.div`
         transition: transform 450ms cubic-bezier(0.2, 0.8, 0.2, 1);
     }
  `; 
+
+export const OpacityLayerBottom = styled.div`
+    position: absolute;
+    width: 22.5rem;
+    height: 36.875rem;
+    border-radius: 0 0 40% 40%;
+    overflow: hidden;
+    background: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 1) 0%,
+        rgba(17, 17, 17, 0.5) 40%,
+        rgba(17, 17, 17, 0) 50%
+  );
+    top: 0;
+`;
+
+export const OpacityLayerTop = styled.div`
+    position: absolute;
+    width: 22.5rem;
+    height: 36.875rem;
+    border-radius: 40% 40% 0 0;
+    overflow: hidden;
+    background: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 50%,
+        rgba(17, 17, 17, 0.5) 60%,
+        rgba(17, 17, 17, 1) 100%
+  );
+    top: 0;
+`;
+
+ export const TextWrapper = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+`;
