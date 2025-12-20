@@ -4,6 +4,7 @@ import MasterPiece from '@/pages/Home/components/MasterPiece/index'
 import MovieCategory from '@/pages/Home/components/MovieCategory/index'
 import Value from '@/pages/Home/components/Value/index'
 import Footer from '@/components/Footer/Footer'
+import CommingSoon from './components/CommingSoon'
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <HeroMovieBanner />
       <MasterPiece />
+      <CommingSoon />
       <MovieCategory />
       <Value />
       <Footer />
