@@ -11,22 +11,34 @@ export default function index() {
         <S.Wrapper>
             <S.Title><img src={titleImg} /></S.Title>
             <S.ItemWrapper>
-                <S.BottomItem>
-                    <img src={hoppers} />
-                    <S.OpacityLayerBottom />
-                    <S.TextWrapper>
+                <S.Item>
+                    <S.BottomItem>
+                        <img src={hoppers} />
+                        <S.OpacityLayerBottom />
+                    </S.BottomItem>
+                    <S.TopTextWrapper>
                         <Number number="01" name="호퍼스" />
-                    </S.TextWrapper>
-                </S.BottomItem>
-                <S.TopItem>
-                    <img src={toystory5} />
-                    <S.OpacityLayerTop />
-                    <Number number="02"  name="토이스토리5" /></S.TopItem>
-                <S.BottomItem>
-                    <img src={gatto} />
-                    <S.OpacityLayerBottom />
-                    <Number number="03" name="가토" />
-                </S.BottomItem>
+                    </S.TopTextWrapper>
+                </S.Item>
+
+                <S.Item>
+                    <S.TopItem>
+                        <img src={toystory5} />
+                        <S.OpacityLayerTop />
+                    </S.TopItem>
+                    <S.BottomTextWrapper>
+                        <Number number="02"  name="토이스토리5" />
+                    </S.BottomTextWrapper>
+                </S.Item>
+                    <S.Item>
+                        <S.BottomItem>
+                            <img src={gatto} />
+                            <S.OpacityLayerBottom />
+                        </S.BottomItem>
+                        <S.TopTextWrapper>
+                           <Number number="03" name="가토" />
+                        </S.TopTextWrapper>
+                    </S.Item>
             </S.ItemWrapper>
         </S.Wrapper>
     </>

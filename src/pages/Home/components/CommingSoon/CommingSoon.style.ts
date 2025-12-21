@@ -23,6 +23,31 @@ export const ItemWrapper = styled.div`
     gap: 2rem;
 `;
 
+ export const TopTextWrapper = styled.div`
+    position: absolute;
+    top: 0;
+    right: -2rem;
+`;
+
+ export const BottomTextWrapper = styled.div`
+    position: absolute;
+    bottom: 0;
+    right: -2rem;
+`;
+
+export const Item = styled.div`
+    display: flex;
+    position: relative;
+
+    &:hover ${TopTextWrapper},
+    &:hover ${TopTextWrapper} * ,
+    &:hover ${BottomTextWrapper},
+    &:hover ${BottomTextWrapper} * {
+        color: ${colors.purple};
+        transition: transform 450ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+`;
+
 export const BottomItem = styled.div`
     width: 22.5rem;
     height: 36.875rem;
@@ -30,16 +55,16 @@ export const BottomItem = styled.div`
     overflow: hidden;
     position: relative;
 
+    &:hover img{
+        transform: scale(1.1);
+        transition: transform 450ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
      img{
          width: 22.5rem;
          height: 36.875rem;
          object-fit: cover;
      }
-
-     img:hover{
-        transform: scale(1.1);
-        transition: transform 450ms cubic-bezier(0.2, 0.8, 0.2, 1);
-    }
  `; 
 
  export const TopItem = styled.div`
@@ -56,8 +81,8 @@ export const BottomItem = styled.div`
          object-fit: cover;
      }
 
-    img:hover{
-        transform: scale(1.08);
+    &:hover img{
+        transform: scale(1.1);
         transition: transform 450ms cubic-bezier(0.2, 0.8, 0.2, 1);
     }
  `; 
@@ -67,6 +92,7 @@ export const OpacityLayerBottom = styled.div`
     width: 22.5rem;
     height: 36.875rem;
     border-radius: 0 0 40% 40%;
+    pointer-events: none;
     overflow: hidden;
     background: linear-gradient(
         180deg,
@@ -82,6 +108,7 @@ export const OpacityLayerTop = styled.div`
     width: 22.5rem;
     height: 36.875rem;
     border-radius: 40% 40% 0 0;
+    pointer-events: none;
     overflow: hidden;
     background: linear-gradient(
         180deg,
@@ -90,10 +117,4 @@ export const OpacityLayerTop = styled.div`
         rgba(17, 17, 17, 1) 100%
   );
     top: 0;
-`;
-
- export const TextWrapper = styled.div`
-    position: absolute;
-    top: 0;
-    left: 0;
 `;
