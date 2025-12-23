@@ -20,7 +20,7 @@ export default function Header() {
           <div><Link to='/films'>작품</Link></div>
           <div>이벤트</div>
           <div>기술 연구</div>
-          <div>픽사에서 일하기</div>
+          <div><Link to='/work-at-pixar'>픽사에서 일하기</Link></div>
           <div>픽사 소개</div>
         </S.TabMenu>
         <S.SNSMenu>
