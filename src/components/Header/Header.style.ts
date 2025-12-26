@@ -43,6 +43,10 @@ export const TabMenu = styled.div`
   font-size: 14px;
   cursor: pointer;
 
+  a.active{
+    font-weight: 600;
+  }
+
   div:hover{
     font-weight: 700;
   }

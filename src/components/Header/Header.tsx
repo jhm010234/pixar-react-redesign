@@ -6,7 +6,7 @@ import instagramImg from '@/assets/icon/sns/instagram.png';
 import youtubeImg from '@/assets/icon/sns/youtube.png';
 import linkedinImg from '@/assets/icon/sns/linkedin.png';
 import menuImg from '@/assets/icon/menu.png';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Header() {
   const openMenu = () => {};
@@ -17,10 +17,10 @@ export default function Header() {
       <Link to='/'><S.LogoImg src={logoImg} /></Link>
         
         <S.TabMenu>
-          <div><Link to='/films'>작품</Link></div>
+          <div><NavLink to='/films'>작품</NavLink></div>
           <div>이벤트</div>
           <div>기술 연구</div>
-          <div><Link to='/work-at-pixar'>픽사에서 일하기</Link></div>
+          <div><NavLink to='/work-at-pixar'>픽사에서 일하기</NavLink></div>
           <div>픽사 소개</div>
         </S.TabMenu>
         <S.SNSMenu>
