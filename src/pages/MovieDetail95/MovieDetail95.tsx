@@ -3,9 +3,14 @@ import Header from '@/components/Header/Header'
 import Banner from './components/Banner'
 import Introduction from './components/Introduction'
 import Trailers from './components/Trailers'
+import { useEffect } from 'react'
 
 
 export default function MovieDetail95() {
+    useEffect(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    }, []);
+    
   return (
     <>
         <Header />
