@@ -69,7 +69,7 @@ export default function index() {
     </S.MovieItemWrapper>
 
         <S.Pagination>
-          <img src={page===1 ? paginationLeftDisabledBtn : paginationLeftBtn} onClick={page===1?undefined : goPrev} disabled={page === 1} />
+          <img src={page===1 ? paginationLeftDisabledBtn : paginationLeftBtn} onClick={page===1?undefined : goPrev} style={{ cursor: page === 1 ? "not-allowed" : "pointer" }} />
 
         {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
           <S.PageNum key={p} $active={p === page} onClick={() => setPage(p)}>
@@ -77,7 +77,7 @@ export default function index() {
           </S.PageNum>
         ))}
 
-          <img src={page === totalPages ? paginationRightDisabledBtn : paginationRightBtn} onClick={page === totalPages ? undefined : goNext} disabled={page === totalPages || totalPages === 0} />
+          <img src={page === totalPages ? paginationRightDisabledBtn : paginationRightBtn} onClick={page === totalPages ? undefined : goNext} style={{ cursor: page === totalPages || totalPages === 0 ? "not-allowed" : "pointer" }} />
 
       </S.Pagination>
 

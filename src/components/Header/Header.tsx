@@ -18,7 +18,7 @@ export default function Header() {
         
         <S.TabMenu>
           <div><NavLink to='/films'>작품</NavLink></div>
-          <div>이벤트</div>
+          <div><NavLink to='/pixar-event'>이벤트</NavLink></div>
           <div>기술 연구</div>
           <div><NavLink to='/work-at-pixar'>픽사에서 일하기</NavLink></div>
           <div>픽사 소개</div>
