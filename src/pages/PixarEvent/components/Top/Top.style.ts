@@ -5,7 +5,8 @@ export const Wrapper = styled.div`
     display: flex;
     padding: 0 12.5rem;
     justify-content: space-between;
-    margin-bottom: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 18rem;
 `;
 
 export const TextWrapper = styled.div`

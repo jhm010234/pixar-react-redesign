@@ -1,4 +1,5 @@
 import * as S from "./Science.style"
+import BgImage from "@/assets/image/PixarEvent/Science/ScienceBackground.png"
 import DetailBtn from "@/assets/image/PixarEvent/DetailButton.png"
 import LineImage from "@/assets/image/PixarEvent/LineImage.png"
 import ScienceImg1 from "@/assets/image/PixarEvent/Science/ScienceImage_1.png"
@@ -12,11 +13,33 @@ import Explore3 from "@/assets/image/PixarEvent/Science/Explore3.png"
 export default function index() {
   return (
     <S.Wrapper>
-        <div></div>
+        <S.FirstWrapper>
+            <S.BgImage src={BgImage} />
+            <S.FirstText>
+                <S.SmallText>
+                    <S.Date>20250301</S.Date>
+                    <S.Place><S.BoldText>코네티컷 사이언스 센터 (Connecticut Science Center) <br/></S.BoldText> 하트퍼드, 코네티컷주</S.Place>
+                    <S.Date>20250901</S.Date>
+                </S.SmallText>
+                <S.BigText>
+                    <S.CurrentDate>20241001</S.CurrentDate>
+                    <S.CurrentPlace>
+                        <S.EventName> <S.BoldText>T H E   S C I E N C E &nbsp;&nbsp;</S.BoldText> B E H I N D   P I X A R</S.EventName>
+                        <S.BoldText>Pavilhão do Conhecimento<br/></S.BoldText>리스본, 포르투갈
+                        </S.CurrentPlace>
+                    <S.CurrentDate>20250930</S.CurrentDate>
+                </S.BigText>
+                <S.SmallText>
+                    <S.Date>20251011</S.Date>
+                    <S.Place><S.BoldText>센터 포 사이언스 앤 인더스트리 (Center for Science and Industry, COSI)<br/></S.BoldText>오하이오주 콜럼버스</S.Place>
+                    <S.Date>20260526</S.Date>
+                </S.SmallText>
+            </S.FirstText>
+        </S.FirstWrapper>
         <S.SecondWrapper>
             <S.LeftWrapper>
                 <S.LineImg src={LineImage} />
-                <div>과학과 기술로 만나는<br/>픽사의 영화 세계</div>
+                <S.SecondTitle>과학과 기술로 만나는<br/>픽사의 영화 세계</S.SecondTitle>
             </S.LeftWrapper>
             <S.RightWrapper>
                 <div>

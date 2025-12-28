@@ -6,8 +6,88 @@ export const Wrapper = styled.div`
     flex-direction: column;
     margin: 0 6.25rem;
     background-color: #004D25;
+`;
+
+export const FirstWrapper = styled.div`
+    display: flex;
+    position: relative;
+`;
+
+export const BgImage = styled.img`
+    display: block;
+    width: 100%;
+`;
+
+export const FirstText = styled.div`
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: ${colors.white};
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    gap: 6.25rem;
+`;
+
+export const SmallText = styled.div`
+    display: flex;
+    justify-content: space-between;
+    color: #A0A0A0;
+    gap: 19rem;
+    padding: 0 9rem;
 
 `;
+
+export const Place = styled.div`
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5rem;
+`;
+
+export const BoldText = styled.div`
+    font-weight: 700;
+`;
+
+export const Date = styled.div`
+    display: flex;
+    font-family: "PuradakGentleGothic";
+    font-size: 1.5rem;
+`;
+
+export const BigText = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6.25rem;
+`;
+
+export const CurrentDate = styled.div`
+    display: flex;
+    font-family: "PuradakGentleGothic";
+    font-size: 2.5rem;
+`;
+
+export const CurrentPlace = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    gap: 0.5rem;
+`;
+
+export const EventName = styled.div`
+    display: flex;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+`;
+
+
+
+// export const Wrapper = styled.div``;
+
 
 export const SecondWrapper = styled.div`
     display: flex;
@@ -34,7 +114,13 @@ export const LineImg = styled.img`
     height: 1px;    /* 원하는 길이 */
     object-fit: contain;
     flex-shrink: 0;   /* 눌려서 사라지는 거 방지 */
-    top: 0.6rem;
+    top: 1.1rem;
+`;
+
+export const SecondTitle = styled.div`
+    display: flex;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 `;
 
 export const DetailBtn = styled.img`
