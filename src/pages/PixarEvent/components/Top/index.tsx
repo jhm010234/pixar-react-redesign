@@ -1,13 +1,14 @@
 import * as S from "./Top.style"
 import EmotionsImage from "@/assets/image/PixarEvent/EmotionsImage.png"
 import ScienceImage from "@/assets/image/PixarEvent/ScienceImage.png"
-import colors from "@/styles/colors";
 import ArrowImg from "@/assets/icon/Arrows/PixarEventArrow.png"
 import { useState } from "react";
 
+type Section = "emotions" | "science" | null;
 
-export default function index() {
-    const [content, setContent] = useState("none");
+
+export default function index({onSelect} : {onSelect: (s:Section) => void}) {
+
 
   return (
     <S.Wrapper>
@@ -34,7 +35,7 @@ export default function index() {
                     </S.ContentText>
 
                 </S.BrightWrapper>
-                <S.DetailButton>
+                <S.DetailButton onClick={()=> onSelect("emotions")} style={{cursor : "pointer"}}>
                     <div>자세히 보기</div>
                     <img src={ArrowImg} />
                 </S.DetailButton>
@@ -55,7 +56,7 @@ export default function index() {
                         </S.HashTagWrapper>
                     </S.ContentText>
                 </S.BrightWrapper>
-                <S.DetailButton>
+                <S.DetailButton onClick={()=> onSelect("science")}  style={{cursor : "pointer"}}>
                     <div>자세히 보기</div>
                     <img src={ArrowImg} />
                 </S.DetailButton>
